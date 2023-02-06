@@ -1,0 +1,167 @@
+2023-02-06 20:45:09,196: INFO _welcome-362 Bot: 2701_python_bot [@Oh_py_python_bot]
+2023-02-06 20:45:09,196: INFO start_polling-358 Start polling.
+2023-02-06 20:45:53,735: INFO start-21 user_id=5181377654 user_bot=False user_message='/start'
+2023-02-06 21:00:02,187: INFO stop_polling-433 Stop polling...
+2023-02-06 21:00:02,189: WARNING start_polling-329 Goodbye!
+2023-02-06 21:00:06,622: INFO _welcome-362 Bot: 2701_python_bot [@Oh_py_python_bot]
+2023-02-06 21:00:06,623: INFO start_polling-358 Start polling.
+2023-02-06 21:00:14,103: INFO start-21 user_id=5181377654 user_bot=False user_message='/start'
+2023-02-06 21:00:16,827: ERROR default_exception_handler-1707 Task exception was never retrieved
+2023-02-06 21:04:33,509: INFO stop_polling-433 Stop polling...
+2023-02-06 21:04:33,510: WARNING start_polling-329 Goodbye!
+2023-02-06 21:05:57,812: INFO _welcome-362 Bot: 2701_python_bot [@Oh_py_python_bot]
+2023-02-06 21:05:57,812: INFO start_polling-358 Start polling.
+2023-02-06 21:06:05,709: INFO start-22 user_id=5181377654 user_bot=False user_message='/start'
+2023-02-06 21:09:49,693: INFO stop_polling-433 Stop polling...
+2023-02-06 21:09:49,694: WARNING start_polling-329 Goodbye!
+2023-02-06 21:09:53,695: INFO _welcome-362 Bot: 2701_python_bot [@Oh_py_python_bot]
+2023-02-06 21:09:53,697: INFO start_polling-358 Start polling.
+2023-02-06 21:09:59,572: INFO start-22 user_id=5181377654 user_bot=False user_message='/start'
+2023-02-06 21:12:52,395: INFO stop_polling-433 Stop polling...
+2023-02-06 21:12:52,397: WARNING start_polling-329 Goodbye!
+2023-02-06 21:13:03,678: INFO _welcome-362 Bot: 2701_python_bot [@Oh_py_python_bot]
+2023-02-06 21:13:03,679: INFO start_polling-358 Start polling.
+2023-02-06 21:13:07,798: INFO start-20 user_id=5181377654 user_bot=False user_message='/start'
+2023-02-06 21:26:59,523: INFO _welcome-362 Bot: 2701_python_bot [@Oh_py_python_bot]
+2023-02-06 21:26:59,524: INFO start_polling-358 Start polling.
+2023-02-06 21:27:09,974: INFO start-20 user_id=5181377654 user_bot=False user_message='/start'
+2023-02-06 21:29:29,528: INFO stop_polling-433 Stop polling...
+2023-02-06 21:29:29,530: WARNING start_polling-329 Goodbye!
+2023-02-06 21:29:33,319: INFO _welcome-362 Bot: 2701_python_bot [@Oh_py_python_bot]
+2023-02-06 21:29:33,320: INFO start_polling-358 Start polling.
+2023-02-06 21:29:35,587: INFO start-20 user_id=5181377654 user_bot=False user_message='/start'
+2023-02-06 21:29:46,568: INFO stop_polling-433 Stop polling...
+2023-02-06 21:29:46,570: WARNING start_polling-329 Goodbye!
+2023-02-06 21:31:31,238: INFO _welcome-362 Bot: 2701_python_bot [@Oh_py_python_bot]
+2023-02-06 21:31:31,240: INFO start_polling-358 Start polling.
+2023-02-06 21:31:36,925: INFO start-20 user_id=5181377654 user_bot=False user_message='/start'
+2023-02-06 21:31:37,331: ERROR default_exception_handler-1707 Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Program Files\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest('Can\'t parse keyboard button: field "request_contact" must be of type boolean')>
+Traceback (most recent call last):
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "d:/Python/ДЗ/Seminar31.01.2023_dz/Bot/main.py", line 26, in start
+    await bot.send_message(user_id, 'Сделайте выбор', reply_markup=btns)
+  File "C:\Program Files\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Program Files\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Program Files\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Program Files\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Program Files\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse keyboard button: field "request_contact" must be of type boolean
+2023-02-06 21:32:04,565: INFO stop_polling-433 Stop polling...
+2023-02-06 21:32:04,566: WARNING start_polling-329 Goodbye!
+2023-02-06 21:52:13,355: INFO _welcome-362 Bot: 2701_python_bot [@Oh_py_python_bot]
+2023-02-06 21:52:13,370: INFO start_polling-358 Start polling.
+2023-02-06 21:52:13,586: INFO start-21 user_id=5181377654 user_bot=False user_message='/start'
+2023-02-06 21:52:13,861: ERROR default_exception_handler-1707 Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Program Files\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest('Can\'t parse keyboard button: field "request_contact" must be of type boolean')>
+Traceback (most recent call last):
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "d:/Python/ДЗ/Seminar31.01.2023_dz/Bot/main.py", line 27, in start
+    await bot.send_message(user_id, 'Сделайте выбор', reply_markup=btns)
+  File "C:\Program Files\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Program Files\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Program Files\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Program Files\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Program Files\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse keyboard button: field "request_contact" must be of type boolean
+2023-02-06 21:52:19,918: INFO start-21 user_id=5181377654 user_bot=False user_message='/start'
+2023-02-06 21:52:20,230: ERROR default_exception_handler-1707 Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<Dispatcher._process_polling_updates() done, defined at C:\Program Files\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest('Can\'t parse keyboard button: field "request_contact" must be of type boolean')>
+Traceback (most recent call last):
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "d:/Python/ДЗ/Seminar31.01.2023_dz/Bot/main.py", line 27, in start
+    await bot.send_message(user_id, 'Сделайте выбор', reply_markup=btns)
+  File "C:\Program Files\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Program Files\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Program Files\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Program Files\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Program Files\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse keyboard button: field "request_contact" must be of type boolean
+2023-02-06 21:52:36,802: INFO stop_polling-433 Stop polling...
+2023-02-06 21:52:36,803: WARNING start_polling-329 Goodbye!
+2023-02-06 21:52:40,868: INFO _welcome-362 Bot: 2701_python_bot [@Oh_py_python_bot]
+2023-02-06 21:52:40,870: INFO start_polling-358 Start polling.
+2023-02-06 21:52:46,579: INFO start-21 user_id=5181377654 user_bot=False user_message='/start'
+2023-02-06 21:53:02,525: INFO stop_polling-433 Stop polling...
+2023-02-06 21:53:02,526: WARNING start_polling-329 Goodbye!
+2023-02-06 21:53:25,322: INFO _welcome-362 Bot: 2701_python_bot [@Oh_py_python_bot]
+2023-02-06 21:53:25,322: INFO start_polling-358 Start polling.
+2023-02-06 21:53:34,061: INFO start-21 user_id=5181377654 user_bot=False user_message='/start'
+2023-02-06 21:53:34,307: ERROR default_exception_handler-1707 Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Program Files\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=BadRequest('Can\'t parse keyboard button: field "request_poll" must be of type object')>
+Traceback (most recent call last):
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Program Files\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "d:/Python/ДЗ/Seminar31.01.2023_dz/Bot/main.py", line 27, in start
+    await bot.send_message(user_id, 'Сделайте выбор', reply_markup=btns)
+  File "C:\Program Files\lib\site-packages\aiogram\bot\bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Program Files\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Program Files\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Program Files\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Program Files\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse keyboard button: field "request_poll" must be of type object
+2023-02-06 21:54:26,901: INFO stop_polling-433 Stop polling...
+2023-02-06 21:54:26,902: WARNING start_polling-329 Goodbye!
+2023-02-06 21:54:30,476: INFO _welcome-362 Bot: 2701_python_bot [@Oh_py_python_bot]
+2023-02-06 21:54:30,477: INFO start_polling-358 Start polling.
+2023-02-06 21:54:32,616: INFO start-21 user_id=5181377654 user_bot=False user_message='/start'
+2023-02-06 21:57:26,019: INFO stop_polling-433 Stop polling...
+2023-02-06 21:57:26,020: WARNING start_polling-329 Goodbye!
+2023-02-06 22:08:53,684: INFO _welcome-362 Bot: 2701_python_bot [@Oh_py_python_bot]
+2023-02-06 22:08:53,712: INFO start_polling-358 Start polling.
+2023-02-06 22:09:01,557: INFO start-21 user_id=5181377654 user_bot=False user_message='/start'
